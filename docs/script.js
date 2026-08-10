@@ -19,6 +19,11 @@ const firstProductPrice = productRail?.querySelector('.product-price');
 if (firstProductPrice) firstProductPrice.textContent = 'Rp1.500.000';
 
 if (productRail) {
+  const compressorHeading = productRail.closest('.product-showcase')?.querySelector('.showcase-heading h2');
+  if (compressorHeading) {
+    compressorHeading.innerHTML = '<img class="category-logo" src="assets/sikelan-heading-logo.png" alt="Sikelan" />';
+  }
+
   const additionalProducts = [
     {
       name: 'Compressor Sikelan GQR-16 GQR16KMD CU',
