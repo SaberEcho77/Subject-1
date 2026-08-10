@@ -1,0 +1,7 @@
+.visit-section { padding: 0 0 6rem; background: var(--blue); color: #fff; }
+.visit-card { display: grid; grid-template-columns: 1.2fr .8fr; gap: 2rem; padding: 3rem; background: #0d609d; }
+.visit-card .eyebrow { color: #b8e0ff; }.visit-card h2 { max-width: 17ch; margin-bottom: .9rem; }.visit-card p:not(.eyebrow) { max-width: 53ch; color: #d7edfc; }
+.visit-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.5rem; }.whatsapp-button { background: #168a47; }.whatsapp-button:hover { background: #0c6c34; }
+.map-button { display: inline-flex; align-items: center; gap: .5rem; padding: .85rem 1rem; border: 1px solid rgba(255,255,255,.7); color: #fff; font-size: .82rem; font-weight: 800; text-decoration: none; }.map-button span { font-size: 1.4rem; }
+.map-preview { display: grid; align-content: center; gap: .4rem; min-height: 210px; padding: 1.6rem; background: linear-gradient(135deg,rgba(15,178,209,.8),rgba(17,86,157,.92)), repeating-linear-gradient(30deg,transparent 0 24px,rgba(255,255,255,.18) 25px 27px); color: #fff; text-decoration: none; box-shadow: inset 0 0 0 1px rgba(255,255,255,.25); }.map-preview span { font: 500 .7rem 'DM Mono',monospace; letter-spacing: .12em; }.map-preview strong { font-size: 1.7rem; line-height: 1.1; }.map-preview small { color: #d7edfc; }
+@media (max-width:760px) { .visit-section { padding-bottom: 4.5rem; }.visit-card { grid-template-columns: 1fr; padding: 2rem 1rem; }.map-preview { min-height: 170px; } }
