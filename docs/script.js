@@ -72,19 +72,22 @@ if (productRail) {
         name: 'Thermostat Digital DEI 625E untuk Chiller',
         description: 'Digital thermostat untuk kebutuhan chiller.',
         price: 'Rp750.000',
+        image: 'assets/dei-625e.png',
         url: 'https://www.tokopedia.com/berkatteknikjakarta/thermostat-digital-dei-625e-untuk-chiller-1731535433525790623?extParam=src%3Dshop%26whid%3D11333537&aff_unique_id=&channel=others&chain_key=',
       },
       {
         name: 'Thermostat DEI 617 SE Digital',
         description: 'Digital thermostat chiller body besar.',
         price: 'Rp1.100.000',
+        image: 'assets/dei-617se.png',
         url: 'https://www.tokopedia.com/berkatteknikjakarta/thermostat-dei-617-se-digital-thermostat-chiller-body-besar?extParam=src%3Dshop%26whid%3D11333537&aff_unique_id=&channel=others&chain_key=',
       },
       {
-        name: 'Thermostat DEI 106 DEI106H',
-        description: 'Thermostat untuk kontrol temperatur tinggi.',
-        price: 'Rp820.000',
-        url: 'https://www.tokopedia.com/berkatteknikjakarta/thermostat-dei-106-dei106h-for-high-temperature-control?extParam=whid%3D11333537%26src%3Dshop&aff_unique_id=&channel=others',
+        name: 'Thermostat Digital DEI 104JE',
+        description: 'Pengganti tipe lama 105, made in Taiwan.',
+        price: 'Rp900.000',
+        image: 'assets/dei-104je.png',
+        url: 'https://www.tokopedia.com/berkatteknikjakarta/thermostat-digital-dei-104je-pengganti-tipe-lama-105-made-in-taiwan-1731435834120832927?extParam=src%3Dshop%26whid%3D11333537&aff_unique_id=&channel=others&chain_key=',
       },
     ];
 
@@ -92,7 +95,7 @@ if (productRail) {
       <div class="product-rail" aria-label="Produk DEI">
         ${deiProducts.map((product) => `
           <article class="store-product dei-product-card">
-            <img src="assets/dei-logo-transparent.png" alt="DEI thermostat" />
+            <img src="${product.image}" alt="${product.name}" />
             <div class="store-product-content">
               <p class="product-type">DEI</p>
               <h3>${product.name}</h3>
