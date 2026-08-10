@@ -1,0 +1,9 @@
+.brand-strip .container { min-height: 76px; gap: clamp(.7rem, 2.4vw, 2.4rem); }
+.partner { gap: .18rem; min-width: 78px; font-size: clamp(.68rem, 1.2vw, .95rem); }
+.partner img { width: clamp(54px, 7.2vw, 108px); height: 35px; }
+
+@media (max-width: 760px) {
+  .brand-strip .container { min-height: 58px; }
+  .partner { font-size: .54rem; }
+  .partner img { width: 48px; height: 24px; }
+}
