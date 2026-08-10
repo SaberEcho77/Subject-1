@@ -2,6 +2,7 @@
 .partner { gap: .18rem; min-width: 78px; font-size: clamp(.68rem, 1.2vw, .95rem); }
 .partner img { width: clamp(54px, 7.2vw, 108px); height: 35px; }
 .hero-compressor-photo { mix-blend-mode: normal; }
+.hero-collage { display: block; width: 100%; height: 100%; object-fit: contain; }
 .home-page .products, .home-page .solutions, .home-page .about { display: none; }
 
 @media (max-width: 760px) {
