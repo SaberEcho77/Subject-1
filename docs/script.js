@@ -21,7 +21,15 @@ if (firstProductPrice) firstProductPrice.textContent = 'Rp1.500.000';
 if (productRail) {
   const compressorHeading = productRail.closest('.product-showcase')?.querySelector('.showcase-heading h2');
   if (compressorHeading) {
-    compressorHeading.innerHTML = '<img class="category-logo" src="assets/sikelan-heading-logo.png" alt="Sikelan" />';
+    compressorHeading.textContent = 'SIKELAN';
+  }
+
+  const fanMotorShowcase = productRail.closest('.product-showcase')?.nextElementSibling;
+  const fanMotorEyebrow = fanMotorShowcase?.querySelector('.showcase-heading .eyebrow');
+  const fanMotorHeading = fanMotorShowcase?.querySelector('.showcase-heading h2');
+  if (fanMotorEyebrow) fanMotorEyebrow.textContent = '02 / DEI';
+  if (fanMotorHeading) {
+    fanMotorHeading.innerHTML = '<img class="category-logo dei-category-logo" src="assets/dei-category-logo.png" alt="DEI" />';
   }
 
   const additionalProducts = [
