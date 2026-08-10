@@ -108,4 +108,59 @@ if (productRail) {
       </div>
     `);
   }
+
+  const tecumsehShowcase = fanMotorShowcase?.nextElementSibling;
+  const tecumsehEyebrow = tecumsehShowcase?.querySelector('.showcase-heading .eyebrow');
+  const tecumsehHeading = tecumsehShowcase?.querySelector('.showcase-heading h2');
+  const tecumsehDescription = tecumsehShowcase?.querySelector('.showcase-heading > p');
+  if (tecumsehEyebrow) tecumsehEyebrow.textContent = '03 / Tecumseh';
+  if (tecumsehHeading) {
+    tecumsehHeading.innerHTML = '<img class="category-logo tecumseh-category-logo" src="assets/tecumseh-logo-transparent.png" alt="Tecumseh" />';
+  }
+  if (tecumsehDescription) {
+    tecumsehDescription.textContent = 'Pilihan kompresor Tecumseh untuk kebutuhan chiller dan freezer.';
+  }
+
+  if (tecumsehShowcase && !tecumsehShowcase.querySelector('.product-rail')) {
+    const tecumsehProducts = [
+      {
+        name: 'Kompresor Tecumseh AE4460Y 1/2 PK',
+        description: 'Untuk chiller high temperature.',
+        price: 'Rp3.350.000',
+        image: 'assets/tecumseh-ae4460y.png',
+        url: 'https://www.tokopedia.com/berkatteknikjakarta/kompresor-tecumseh-ae4460y-1-2pk-chiller-high-temp-tecumseh-4460y?extParam=src%3Dshop%26whid%3D11333537&aff_unique_id=&channel=others&chain_key=',
+      },
+      {
+        name: 'Compressor Tecumseh AE2413Y 1/3 PK',
+        description: 'Untuk kulkas freezer R134.',
+        price: 'Rp2.500.000',
+        image: 'assets/tecumseh-ae2413y.png',
+        url: 'https://www.tokopedia.com/berkatteknikjakarta/compressor-tecumseh-ae-2413y-1-3-pk-utk-kulkas-freezer-r134-1732792893022832543?extParam=src%3Dshop%26whid%3D11333537&aff_unique_id=&channel=others&chain_key=',
+      },
+      {
+        name: 'Compressor Tecumseh AE2410Y 1/4 PK',
+        description: 'Untuk aplikasi freezer R134A.',
+        price: 'Rp2.350.000',
+        image: 'assets/tecumseh-ae2410y.png',
+        url: 'https://www.tokopedia.com/berkatteknikjakarta/compresso-tecumseh-ae2410y-ae-2410y-aplikasi-freezer-1-4-pk-r134a?extParam=src%3Dshop%26whid%3D11333537&aff_unique_id=&channel=others&chain_key=',
+      },
+    ];
+
+    tecumsehShowcase.querySelector('.container')?.insertAdjacentHTML('beforeend', `
+      <div class="product-rail" aria-label="Produk Tecumseh">
+        ${tecumsehProducts.map((product) => `
+          <article class="store-product tecumseh-product-card">
+            <img src="${product.image}" alt="${product.name}" />
+            <div class="store-product-content">
+              <p class="product-type">Tecumseh</p>
+              <h3>${product.name}</h3>
+              <p>${product.description}</p>
+              <p class="product-price">${product.price}</p>
+              <a class="button" href="${product.url}" target="_blank" rel="noreferrer">Lihat produk →</a>
+            </div>
+          </article>
+        `).join('')}
+      </div>
+    `);
+  }
 }
