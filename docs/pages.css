@@ -5,5 +5,7 @@
 .inner-page .section { padding-top: 4.5rem; }
 .inner-page .solutions { padding: 4.5rem 0; }
 .inner-page .about { padding: 5rem 0; }
+.contact-promo { margin-top: 3rem; text-align: center; }
+.contact-promo img { display: block; width: min(760px, 100%); margin: 0 auto; }
 .page-cta { margin-top: 3rem; }
 @media (max-width: 760px) { .page-intro { padding: 3.5rem 0 2rem; } }
