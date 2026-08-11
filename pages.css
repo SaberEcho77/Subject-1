@@ -11,7 +11,7 @@
 .inner-page .about .eyebrow { color: #d7f7ff; }
 .inner-page .about .about-copy p { color: #f1fcff; }
 .inner-page .about .text-link { color: #fff; }
-.contact-methods { display: grid; gap: 1rem; margin-top: 1.5rem; }
+.contact-methods { display: flex; align-items: center; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem; }
 .contact-method { display: inline-flex; align-items: center; gap: .7rem; width: fit-content; }
 .contact-method img { width: 38px; height: 38px; object-fit: contain; }
 .contact-method .tokopedia-contact-logo { width: 52px; height: 42px; }
