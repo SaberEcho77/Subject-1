@@ -2,6 +2,9 @@
 .page-intro { padding: 5.5rem 0 3rem; background: var(--navy); color: #fff; }
 .page-intro .eyebrow { color: #77c8ff; }
 .page-intro p:last-child { max-width: 58ch; color: #bdcad4; font-size: 1.05rem; }
+.contact-page-intro { background: linear-gradient(115deg, #006ca8 0%, #087eaf 46%, #77cac4 100%); }
+.contact-page-intro .eyebrow { color: #d7f5ff; }
+.contact-page-intro p:last-child { color: #fff; }
 .inner-page .section { padding-top: 4.5rem; }
 .inner-page .solutions { padding: 4.5rem 0; }
 .inner-page .about { padding: 5rem 0; background: #e7f6fc; }
