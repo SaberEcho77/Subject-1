@@ -1,6 +1,10 @@
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav-links');
 
+document.querySelectorAll('a[href="about.html"]').forEach((link) => {
+  link.textContent = 'Contact';
+});
+
 toggle?.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('is-open');
   toggle.setAttribute('aria-expanded', String(isOpen));
