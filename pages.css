@@ -5,7 +5,7 @@
 .inner-page .section { padding-top: 4.5rem; }
 .inner-page .solutions { padding: 4.5rem 0; }
 .inner-page .about { padding: 5rem 0; }
-.contact-promo { margin-top: 3rem; text-align: center; }
-.contact-promo img { display: block; width: min(760px, 100%); margin: 0 auto; }
+.contact-intro-grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: center; gap: 2rem; }
+.contact-intro-grid img { display: block; width: 100%; max-height: 420px; object-fit: contain; }
 .page-cta { margin-top: 3rem; }
-@media (max-width: 760px) { .page-intro { padding: 3.5rem 0 2rem; } }
+@media (max-width: 760px) { .page-intro { padding: 3.5rem 0 2rem; } .contact-intro-grid { grid-template-columns: 1fr; } .contact-intro-grid img { max-height: 340px; } }
